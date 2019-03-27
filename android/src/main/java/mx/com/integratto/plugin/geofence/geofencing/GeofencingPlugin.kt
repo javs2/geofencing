@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package mx.com.integratto.plugin.geofence.geofencing_example
+package mx.com.integratto.plugin.geofence.geofencing
 
 import android.Manifest
 import android.app.Activity
@@ -22,7 +22,6 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import org.json.JSONArray
-import org.json.JSONObject
 
 class GeofencingPlugin(context: Context, activity: Activity?) : MethodCallHandler {
     private val mContext = context
@@ -222,14 +221,14 @@ class GeofencingPlugin(context: Context, activity: Activity?) : MethodCallHandle
                 result.success(true)
             }
             "GeofencingPlugin.registerGeofence" -> registerGeofence(mContext,
-                                                                    mGeofencingClient,
-                                                                    args,
-                                                                    result,
-                                                                    true)
+                    mGeofencingClient,
+                    args,
+                    result,
+                    true)
             "GeofencingPlugin.removeGeofence" -> removeGeofence(mContext,
-                                                                mGeofencingClient,
-                                                                args,
-                                                                result)
+                    mGeofencingClient,
+                    args,
+                    result)
             else -> result.notImplemented()
         }
     }

@@ -2,12 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package mx.com.integratto.plugin.geofence.geofencing_example
+package mx.com.integratto.plugin.geofence.geofencing
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import mx.com.integratto.plugin.geofence.geofencing.GeofencingPlugin
 
 class GeofencingRebootBroadcastReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package mx.com.integratto.plugin.geofence.geofencing_example
+package mx.com.integratto.plugin.geofence.geofencing
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -12,7 +12,6 @@ import android.content.Intent
 import android.os.IBinder
 import android.os.PowerManager
 import android.support.v4.app.NotificationCompat
-import android.util.Log
 import io.flutter.view.FlutterNativeView
 
 class IsolateHolderService : Service() {
